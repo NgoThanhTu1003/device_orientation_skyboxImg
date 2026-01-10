@@ -90,7 +90,7 @@
         var alpha1 = THREE.MathUtils.degToRad(event.alpha);
         var beta1 = THREE.MathUtils.degToRad(event.beta);
         var gamma1 = THREE.MathUtils.degToRad(event.gamma);
-        var euler = new THREE.Euler(beta1, alpha1, -gamma1, 'ZYX');
+        var euler = new THREE.Euler(beta1, alpha1, -gamma1, 'YZX');
   //yxz
 
         const deviceQuat = new THREE.Quaternion().setFromEuler(euler);
