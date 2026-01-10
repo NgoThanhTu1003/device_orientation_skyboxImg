@@ -72,11 +72,7 @@
         requestBtn.addEventListener("click",requestPermission);
         requestBtn.addEventListener("click",removeBtn);
 
-        // let a = document.getElementById("geld");
-        // a.addEventListener('input', () => console.log(a.value))
-        // //a = parseInt(a, 10);
-        // b = a.toString();
-
+  
 
 
         function requestPermission() {
@@ -109,7 +105,7 @@
         //     gamma1=90+(-gamma1)
         // }
 
-        var euler = new THREE.Euler(-gamma1,alpha1,beta1,'YXZ');
+        var euler = new THREE.Euler(gamma1,alpha1,beta1,'YXZ');
 
         VAX.camera.rotation.copy(euler);
         VAX.camera.rotation.x += Math.PI / 2;  
