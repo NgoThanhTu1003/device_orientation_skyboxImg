@@ -101,10 +101,11 @@
         document.getElementById('box1').innerHTML = -gamma1;
 
 
-        var euler = new THREE.Euler(-gamma1+Math.PI / -2,alpha1,beta1,'YXZ');
+        var euler = new THREE.Euler(-gamma1,alpha1,beta1,'YXZ');
 
 
         VAX.camera.rotation.copy(euler);
+        VAX.camera.rotation.x+=Math.PI / -2
 
 
 
