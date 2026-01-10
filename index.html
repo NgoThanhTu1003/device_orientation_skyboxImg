@@ -21,18 +21,15 @@
     <script type="module">
         import * as THREE from 'three';
         import * as VAX from 'vax';
-        // import 'physijs';
         import { OrbitControls } from "https://threejs.org/examples/jsm/controls/OrbitControls.js"        
-        // import * as TWEEN from "three/addons/libs/tween.module.js";
-		//     import * as lil from "three/addons/libs/lil-gui.module.min.js";
-        
+
 
 			VAX.init(animate);
 
 			VAX.camera.fov = 30;
 			VAX.camera.updateProjectionMatrix();
 
-			var controls = new OrbitControls(VAX.camera, VAX.renderer.domElement);
+			// var controls = new OrbitControls(VAX.camera, VAX.renderer.domElement);
 
 
 				controls.enableZoom = false;
@@ -116,7 +113,7 @@
 
 
        function animate(t){
-           controls.update();
+        //    controls.update();
 
            for(var i=0;i<30;i++){
             crystalArray[i].rotation.y=t;
