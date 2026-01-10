@@ -17,10 +17,10 @@
 <body>
 
     <button id="requestBtn" style="background-color: #e7e7e7; color: black; width: 100px; height: 50px;" > request permission</button>
-    <div class="box box3">
-      Some copy on the website <span id='text'>this shiould be changed </span>some copy on the website
+    <div id="box1">
+      Some copy on the website
     </div>
-
+     <span id='text'>this shiould be changed </span>
     <script type="module">
         import * as THREE from 'three';
         import * as VAX from 'vax';
@@ -98,6 +98,8 @@
         var gamma1 = THREE.MathUtils.degToRad(event.gamma);
 
         document.getElementById('text').innerHTML = -gamma1+Math.PI / -2;
+        document.getElementById('box3').innerHTML = -gamma1;
+
 
         var euler = new THREE.Euler(-gamma1+Math.PI / -2,alpha1,beta1,'YXZ');
 
